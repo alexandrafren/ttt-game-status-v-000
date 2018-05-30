@@ -43,8 +43,9 @@ def over?(board)
 end
 
 def winner(board)
+  token = " "
   if won?(board)
-    return win_index[0]
+    token = win_index[0]
   else
     return nil
   end
