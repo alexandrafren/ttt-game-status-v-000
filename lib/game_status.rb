@@ -17,7 +17,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
-    return
+    if board[win_index[0]] == board[win_index[1]] == board[win_index[2]]
+      return win_index
+    else
+    return false
   end
 end
 
