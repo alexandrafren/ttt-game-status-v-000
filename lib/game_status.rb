@@ -45,7 +45,7 @@ end
 def winner(board)
   token = " "
   if won?(board)
-    token = won?(board[])
+    token = won?(board)
   else
     return nil
   end
