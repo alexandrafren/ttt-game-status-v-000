@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
     if (board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X") || (board[win_index[0]] == "O" && board[win_index[1]] == "O" && board[win_index[2]] == "O")
-      puts "#{win_index}"
+      return win_index
     else
     return false
   end
